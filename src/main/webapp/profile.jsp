@@ -130,7 +130,7 @@
 
       try {
           Class.forName("com.mysql.cj.jdbc.Driver");
-          conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/insta_blog", "root", "ijustDh53@");
+          conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/insta_blog", "root", "==Mysql_Password==");
 
           String userSql = "SELECT profile_pic, bio FROM users WHERE id = ?";
           stmt = conn.prepareStatement(userSql);
