@@ -202,7 +202,7 @@
       ResultSet rs = null;
       try {
           Class.forName("com.mysql.cj.jdbc.Driver");
-          conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/insta_blog", "root", "ijustDh53@");
+          conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/insta_blog", "root", "==Mysql_Password==");
 
           String sql = "SELECT p.*, u.username, " +
                        "(SELECT COUNT(*) FROM likes l WHERE l.post_id = p.id) AS like_count, " +
