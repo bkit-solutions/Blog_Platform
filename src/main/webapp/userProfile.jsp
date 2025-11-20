@@ -10,7 +10,7 @@
 
     try {
         Class.forName("com.mysql.cj.jdbc.Driver");
-        conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/insta_blog", "root", "ijustDh53@");
+        conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/insta_blog", "root", "==Mysql_Password==");
 
         // Check if current user follows this profile
         String followCheck = "SELECT * FROM followers WHERE follower_id = ? AND following_id = ?";
