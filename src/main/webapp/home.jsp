@@ -158,7 +158,7 @@
       ResultSet rs2 = null;
       try {
           Class.forName("com.mysql.cj.jdbc.Driver");
-          conn2 = DriverManager.getConnection("jdbc:mysql://localhost:3306/insta_blog", "root", "ijustDh53@");
+          conn2 = DriverManager.getConnection("jdbc:mysql://localhost:3306/insta_blog", "root", "==Mysql_Password==");
 
           String sql = "SELECT u.id, u.username, u.profile_pic, " +
                        "EXISTS (SELECT 1 FROM followers f WHERE f.follower_id = ? AND f.following_id = u.id) AS is_following " +
