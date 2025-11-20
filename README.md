@@ -74,7 +74,7 @@ It is ideal for learning full-stack Java, academic submissions, or as a foundati
 ## 📁 Project Structure
 
 ```
-BlogPlatform/
+Blog_Platform/
 │
 ├── .project
 ├── .classpath
@@ -98,7 +98,7 @@ blog_sql.sql
 
 ### Steps:
 ```sql
-CREATE DATABASE blog;
+CREATE DATABASE insta_blog;
 ```
 
 Then import the SQL file using:
@@ -126,7 +126,7 @@ src/main/java/
 update:
 
 ```java
-String url = "jdbc:mysql://localhost:3306/blog";
+String url = "jdbc:mysql://localhost:3306/insta_blog";
 String username = "your_mysql_username";
 String password = "your_mysql_password";  // REQUIRED
 Class.forName("com.mysql.cj.jdbc.Driver");
